@@ -1,7 +1,5 @@
 package roger.app.address.util;
 
-import com.sun.jdi.LocalVariable;
-
 import java.time.DateTimeException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -24,7 +22,7 @@ public class DateUtil {
     @return formatted string
      */
 
-    public static String format(LocalDate date){
+    public static String format(LocalDate date) {
         if (date == null)
             return null;
         return DATE_TIME_FORMATTER.format(date);
@@ -38,10 +36,10 @@ public class DateUtil {
     @return the date object or null if it could not be converted
      */
 
-    public static LocalDate parse(String dateString){
+    public static LocalDate parse(String dateString) {
         try {
-            return DATE_TIME_FORMATTER.parse(dateString,LocalDate::from);
-        }catch (DateTimeException e){
+            return DATE_TIME_FORMATTER.parse(dateString, LocalDate::from);
+        } catch (DateTimeException e) {
             return null;
         }
     }
@@ -52,7 +50,7 @@ public class DateUtil {
     @param dateString
     @return true if the String is a valid date
      */
-    public static boolean validDate(String dateString){
+    public static boolean validDate(String dateString) {
         //try to parse the String
         return DateUtil.parse(dateString) != null;
     }
