@@ -93,6 +93,13 @@ public class RootLayoutController {
         alert.showAndWait();
     }
 
+
+    //opens the birthday statistics
+    @FXML
+    private void handleShowBirthdayStatistics() {
+        main.showBirthdayStatistics();
+    }
+
     //Closes the application
     @FXML
     private void handleExit() {
