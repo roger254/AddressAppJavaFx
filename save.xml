@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persons>
+    <person>
+        <birthday>1994-09-22</birthday>
+        <city>Kitengela</city>
+        <firstName>Roger</firstName>
+        <lastName>Brian</lastName>
+        <postalCode>242</postalCode>
+        <street>Kitengela</street>
+    </person>
+    <person>
+        <birthday>2014-09-17</birthday>
+        <city>Nairobi</city>
+        <firstName>Ken</firstName>
+        <lastName>Mwangi</lastName>
+        <postalCode>123</postalCode>
+        <street>Kitengela</street>
+    </person>
+</persons>
